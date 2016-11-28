@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-block-semicolon-space-before": never,
+    "declaration-block-trailing-semicolon": never,
+    "declaration-colon-space-before": never,
+    "max-empty-lines": 2,
+    "number-leading-zero": never,
+  }
+}
