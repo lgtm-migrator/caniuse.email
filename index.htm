@@ -8,10 +8,7 @@
   <title>📧 Can I Use for HTML Emails</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-  <link href="style.css" rel="stylesheet">
   <!--[if lt IE 9]>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery||document.write('<script src="https://code.jquery.com/jquery-1.12.4.min.js"><\/script>')</script>
     <link rel="stylesheet" href="/css/ie8.css">
     <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
     <style>body{width:998px}</style>
@@ -22,10 +19,11 @@
   th,td{min-width:108px;max-width:108px;border-top:none;border:1px!important grey}
   th{line-height:14px;font-weight:normal;border-top:none;text-indent:2px}
   th:hover,.thead th{background:white}
-  tr:hover{background:#9DD9EC!important}
+  tr:hover{background:#9DD9EC}
   th:first-of-type{min-width:178px!important}
   td:first-of-type{min-width:178px;max-width:208px}
-  table{margin-left:auto;margin-right:auto;overflow:hidden;border-bottom:1px solid #eee;}
+  .container{margin-left:auto;margin-right:auto;}
+  table{overflow:hidden;border-bottom:1px solid #eee;}
   table::hover{zbackground:white}
   td{border-left:1px solid #EEE}
   td:last-of-type {border-right:1px solid #EEE}
@@ -33,7 +31,7 @@
   .compatible-no{color:#ddd;font-size:21px}
   .compatible-yes{color:#3BCC0E;font-size:17px}
   small{opacity:.5}
-  .header{padding:2rem 15px;margin-bottom:1.5rem;color:#cdbfe3;text-align:center;background:#22699A;background-image:linear-gradient(45deg,#0a1855 0,#38B4D9 100%)}
+  .header{padding:2rem 15px;margin-bottom:1.5rem;color:#cdbfe3;text-align:center;background-color:#22699A;background-image:linear-gradient(45deg,#0a1855 0,#38B4D9 100%)}
   .header .container{position:relative}
   .header h1{font-size:3rem;font-weight:normal;color:#fff}
   .header p{margin-bottom:0;font-size:1.25rem;font-weight:300}
@@ -42,8 +40,8 @@
 .footer a:hover{color:#0275d8}
 .footer p{margin-bottom:0}
 .icon-info:after{content:"*";color:gray;margin-left:2px}
-.section-header td{min-width:300px;background:#eee!important}
-.thead th:not(:first-child){background-color:#F6F6F6!important}
+.section-header td{min-width:300px;background:#eee}
+.thead th:not(:first-child){background-color:#F6F6F6}
 .thead td:first-child{background-color:white}
 
 /** MOBILE **/
@@ -67,7 +65,7 @@ td:nth-of-type(8):before{content:"Outlook 2007/10/13";border-left:0px solid #3E4
 td:nth-of-type(9):before{content:"iOS 10 Mail App";border-left:0px solid #3E434D}
 td:not(:first-child){padding-left:52%!important;text-indent:9px}
 tr,tr:hover{background:white!important}
-td:first-child{background-color:#EEE;text-indent:6px}
+td:first-child{background:#EEE;text-indent:6px}
 .section-header{width:100%!important;max-width:712px}
 .section-header td{width:100%!important;padding-left:0!important;max-width:712px;background:#ccc!important;text-indent:9px}
 }
@@ -83,7 +81,7 @@ td:first-child{background-color:#EEE;text-indent:6px}
 .table{border-top:0!important}
 td,th{position:relative}
 tr:nth-of-type(0),th{border-top:0!important}
-td:hover::after,th:hover::after{content:"";position:absolute;background-color: #ffa;left: 0;top:-5000px;height:10000px;width:100%;z-index:-1}
+td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px;height:10000px;width:100%;z-index:-1}
 }
 
 
@@ -102,16 +100,21 @@ td:hover::after,th:hover::after{content:"";position:absolute;background-color: #
       <p class="lead">
       Compatibility tables for CSS support in HTML emails.
       </p>
+
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
 <!--      <h2>HTML5</h2> -->
+<!--<div id="ccl-table-top-wrapper">
+<div id="ccl-table-top">
+x
+-->
       <table class="table table-rounded table-xstriped table-hover table-sm">
         <thead>
           <tr class="thead">
-            <th class="" width="200"></th>
+            <th class=""></th>
             <th class="">Gmail<br><small>Webmail</small></th>
             <th class="">Outlook.com<br><small>Webmail</small></th>
             <th class="">Android 4.x<br><small>(Gmail App)</small></th>
@@ -122,6 +125,10 @@ td:hover::after,th:hover::after{content:"";position:absolute;background-color: #
             <th class="">Yahoo! Mail<br><small>Webmail</small></th>
           </tr>
         </thead>
+   <!--   </table>
+         </div>
+    </div>
+       <table class="table table-rounded table-xstriped table-hover table-sm">-->
     <tbody>
 
        <tr class="section-header">
@@ -151,8 +158,8 @@ td:hover::after,th:hover::after{content:"";position:absolute;background-color: #
         </tr>
           <tr>
             <td class="">background-position</td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">-</div></td>
+            <td><div class="compatible compatible-no">-</div></td>
+            <td><div class="compatible compatible-no">-</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -861,13 +868,37 @@ td:hover::after,th:hover::after{content:"";position:absolute;background-color: #
 </div>
     <footer class="footer text-muted" role="contentinfo">
   <div class="container">
-    <p>Designed and built by <a href="https://twitter.com/christianoliff" target="_blank">@christianoliff</a>. v0.11.28 (Beta)</p>
+    <p>Designed and built by <a href="https://twitter.com/christianoliff" target="_blank">@christianoliff</a>. v0.11.28 (Beta) </p>
+    <p>
+<a class="github-button" href="https://github.com/coliff/caniuse.email" data-icon="octicon-star" data-style="mega" data-count-href="/coliff/caniuse.email/stargazers" data-count-api="/repos/coliff/caniuse.email#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star coliff/caniuse.email on GitHub">Star</a>
+      </p>
   </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-<!-- Add Analytics -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"><\/script>')</script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+-->
+<script src="js/jquery.floaThead.min.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-88031592-1', 'auto');ga('send','pageview');
+</script>
+<script src="upup.min.js"></script>
+<script>
+UpUp.start({'content-url':'index.htm','assets':['js/jquery.floaThead.min.js']});
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+$(document).ready(function(){
+if($(window).width()>=767){
+var $table=$('table.table');
+$table.floatThead();
+};});
+</script>
 </body>
 </html>
