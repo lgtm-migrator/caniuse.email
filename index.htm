@@ -24,7 +24,6 @@
   td:first-of-type{min-width:178px;max-width:208px}
   .container{margin-left:auto;margin-right:auto;}
   table{overflow:hidden;border-bottom:1px solid #eee;}
-  table::hover{zbackground:white}
   td{border-left:1px solid #EEE}
   td:last-of-type {border-right:1px solid #EEE}
   .compatible{text-align:center;margin-left:auto;margin-right:auto}
@@ -84,7 +83,6 @@ tr:nth-of-type(0),th{border-top:0!important}
 td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px;height:10000px;width:100%;z-index:-1}
 }
 
-
 @media(min-width:576px){
 .bd-footer{text-align:left}
 }
@@ -93,8 +91,11 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
 .footer-links li+li{margin-left:1rem}
 </style>
 </head>
-<body data-spy="scroll" data-target=".thead">
-  <div class="header" style="">
+<body>
+<a href="https://github.com/coliff/caniuse.email">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+  <div class="header">
     <div class="container">
       <h1>Can I Use in HTML Emails</h1>
       <p class="lead">
@@ -106,11 +107,6 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
-<!--      <h2>HTML5</h2> -->
-<!--<div id="ccl-table-top-wrapper">
-<div id="ccl-table-top">
-x
--->
       <table class="table table-rounded table-xstriped table-hover table-sm">
         <thead>
           <tr class="thead">
@@ -895,11 +891,10 @@ UpUp.start({'content-url':'index.htm','assets':['js/jquery.floaThead.min.js']});
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script>
 $(document).ready(function(){
-if($(window).width()>=767){
+if($(window).width()>=998){
 var $table=$('table.table');
 $table.floatThead();
 };});
-</script>  
-  
+</script>
 </body>
 </html>
