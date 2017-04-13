@@ -1,0 +1,129 @@
+{
+  "source": "http://emailclientmarketshare.com/",
+  "agents": {
+    "apple-mail-app": {
+      "description": "apple-iphone and apple-ipad use the same mail app, so this is combined.",
+      "market-share": "42%",
+      "versions": ["iOS 10"],
+      "source": "https://en.wikipedia.org/wiki/Mail_(Apple)"
+    },
+    "gmail": {
+      "description": "gmail.com, maybe inbox, maybe gmail app, not clear",
+      "market-share": "20%",
+      "versions": [null, null],
+      "source": "https://en.wikipedia.org/wiki/Gmail"
+    },
+    "google-android": {
+      "description": "google's mail app?",
+      "market-share": "10%",
+      "versions": ["4.x"],
+      "source": "https://play.google.com/store/apps/details?id=com.google.android.gm&hl=en"
+    },
+    "apple-mail": {
+      "description": "desktop mail app for osx",
+      "market-share": "7%",
+      "versions": ["OSX 10.10"],
+      "source": "https://en.wikipedia.org/wiki/Mail_(Apple)"
+    },
+    "outlook": {
+      "description": "desktop mail app for windows",
+      "market-share": "6%",
+      "versions": ["2007", "2013", "2016"],
+      "source": "https://en.wikipedia.org/wiki/Microsoft_Outlook"
+    },
+    "outlook.com": {
+      "description": "Outlook.com",
+      "market-share": "5%",
+      "versions": [null, null],
+      "source": "https://en.wikipedia.org/wiki/Outlook.com"
+    },
+    "yahoo-mail": {
+      "description": "mail.yahoo.com",
+      "market-share": "2%",
+      "versions": [null, null],
+      "source": "https://en.wikipedia.org/wiki/Yahoo!_Mail"
+    },
+    "windows-mail": {
+      "description": "another desktop mail app for windows",
+      "market-share": "1%",
+      "versions": ["Windows 8", "Windows 10"],
+      "source": "https://en.wikipedia.org/wiki/Mail_(Windows)"
+    },
+    "windows-live-mail": {
+      "description": "yet another desktop mail app for windows",
+      "market-share": "1%",
+      "versions": [null, null],
+      "source": "https://en.wikipedia.org/wiki/Windows_Live_Mail"
+    }
+  },
+  "statuses": {
+    "rec": "W3C Recommendation",
+    "pr": "W3C Proposed Recommendation",
+    "cr": "W3C Candidate Recommendation",
+    "wd": "W3C Working Draft",
+    "ls": "WHATWG Living Standard",
+    "other": "Other",
+    "unoff": "Unofficial / Note"
+  },
+  "cats": {
+    "CSS": ["CSS", "CSS2", "CSS3"],
+    "HTML": ["HTML"]
+  },
+  "support-values":{
+    "y":"(Y)es, supported by default",
+    "a":"(A)lmost supported (aka Partial support)",
+    "n":"(N)o support, or disabled by default",
+    "p":"No support, but has (P)olyfill",
+    "u":"Support (u)nknown",
+    "x":"Requires prefi(x) to work",
+    "d":"(D)isabled by default (need to enable flag or something)",
+    "#n":"Where n is a number, starting with 1, corresponds to the notes_by_num note. For example: \"42\":\"y #1\" means version 42 is supported by default and see note 1."
+  },
+  "data": {
+    "background-color": {
+      "title": "CSS Background Properties",
+      "description": "",
+      "spec": "",
+      "links": [{
+        "url": "https://mdn.org",
+        "title": "MDN"
+      }],
+      "categories": ["CSS"],
+      "stats": {
+        "apple-iphone": {
+          "iOS 10": "y"
+        },
+        "gmail": {
+          "all": "y"
+        },
+        "apple-ipad": {
+          "iOS 10": "y"
+        },
+        "google-android": {
+          "4.x": "y"
+        },
+        "apple-mail": {
+          "OSX 10.10": "y"
+        },
+        "outlook": {
+          "2007": "y",
+          "2013": "y",
+          "2016": "u"
+        },
+        "outlook.com": {
+          "all": "u"
+        },
+        "yahoo-mail": {
+          "all": "y"
+        },
+        "windows-mail": {
+          "Windows 8": "u",
+          "Windows 10": "u"
+        },
+        "windows-live-mail": {
+          "all": "u"
+        }
+      }
+    }
+  }
+}
