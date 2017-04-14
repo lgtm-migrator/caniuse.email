@@ -388,40 +388,47 @@
   <script>
     $(function () {
       $.getJSON('js/data.json', function (dataJson) {
+        window.colspan = 1;
         window.dataJson = dataJson;
         //console.log(dataJson);
         var html = '<thead>\n\t<tr class="thead">\n\t\t<th class=""></th>\n';
         var agents = dataJson.agents;
         for (browser in agents) {
           for (var v = 0; v < agents[browser].versions.length; v++) {
+            colspan++;
             html += '\t\t<th class="">' + agents[browser].name + '<br/>';
             html += '<small>' + agents[browser].versions[v] + '</small></th>\n';
           }
         }
         html += '\t</tr>\n</thead>\n<tbody>\n\t<tr>\n';
 
-        var data = dataJson.data;
-        for (prop in data) {
-          html += '\t\t<td>' + prop + '\n';
-          for (var l = 0; l < data[prop].links.length; l++) {
-            var linkObj = data[prop].links[l];
-            for (link in linkObj) {
-              html += '\t\t\t<a href="' + linkObj[link] + '">' + link + '</a>\n'
+        var sections = dataJson.data;
+        for (section in sections) {
+          var data = sections[section];
+          html += '\t<tr class="section-header"><td class="section-header" colspan="'+window.colspan+'">' + section + '</td></tr>\n';
+          for (prop in data) {
+            html += '\t\t<td>' + prop + '\n';
+            for (var l = 0; l < data[prop].links.length; l++) {
+              var linkObj = data[prop].links[l];
+              for (link in linkObj) {
+                html += '\t\t\t<a href="' + linkObj[link] + '">' + link + '</a>\n'
+              }
             }
-          }
-          html += '\t\t</td>\n';
-          console.log(data.stats);
-          var cssStats = data[prop].stats;
-          for (browser in cssStats) {
-            var browserObj = agents[browser];
-            for (version in cssStats[browser]) {
-              html += '\t\t<td><div class="' + cssStats[browser][version] + '">';
-              html += dataJson.supportvalues[cssStats[browser][version]].icon;
-              html += '</div></td>\n'
+            html += '\t\t</td>\n';
+            console.log(data.stats);
+            var cssStats = data[prop].stats;
+            for (browser in cssStats) {
+              var browserObj = agents[browser];
+              for (version in cssStats[browser]) {
+                html += '\t\t<td><div class="' + cssStats[browser][version] + '">';
+                html += dataJson.supportvalues[cssStats[browser][version]].icon;
+                html += '</div></td>\n'
+              }
             }
+            html += '\t</tr>\n';
           }
-          html += '\t</tr>\n';
         }
+
         html += '</tbody>\n';
         window.html = html
         console.log(html);
