@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Can I Use for HTML Emails? Compatibility Tables">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>📧 Can I Use for HTML Emails</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/css/ie8.css">
+    <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <style>body{width:998px}</style>
+    <![endif]-->
+  <link rel="icon" href="favicon.png">
+  <style>
+    body {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 320px
+    }
+    
+    th,
+    td {
+      /*min-width:108px;*/
+      max-width: 108px;
+      border-top: none;
+      border: 1px!important grey
+    }
+    
+    th {
+      line-height: 14px;
+      font-weight: normal;
+      border-top: none;
+      text-indent: 2px
+    }
+    
+    th:hover,
+    .thead th {
+      background: white
+    }
+    
+    tr:hover {
+      background: #9DD9EC
+    }
+    
+    th:first-of-type {
+      min-width: 178px!important
+    }
+    
+    td:first-of-type {
+      min-width: 178px;
+      max-width: 208px
+    }
+    
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    table {
+      overflow: hidden;
+      border-bottom: 1px solid #eee;
+    }
+    
+    td {
+      border-left: 1px solid #EEE
+    }
+    
+    td:last-of-type {
+      border-right: 1px solid #EEE
+    }
+    
+    .compatible {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto
+    }
+    
+    .compatible-no {
+      color: #ddd;
+      font-size: 21px
+    }
+    
+    .compatible-yes {
+      color: #3BCC0E;
+      font-size: 17px
+    }
+    
+    small {
+      opacity: .5
+    }
+    
+    .header {
+      padding: 2rem 15px;
+      margin-bottom: 1.5rem;
+      color: #cdbfe3;
+      text-align: center;
+      background-color: #22699A;
+      background-image: linear-gradient(45deg, #0a1855 0, #38B4D9 100%)
+    }
+    
+    .header .container {
+      position: relative
+    }
+    
+    .header h1 {
+      font-size: 3rem;
+      font-weight: normal;
+      color: #fff
+    }
+    
+    .header p {
+      margin-bottom: 0;
+      font-size: 1.25rem;
+      font-weight: 300
+    }
+    
+    .footer {
+      padding: 4rem 0;
+      margin-top: 4rem;
+      font-size: 85%;
+      background: #f7f7f7
+    }
+    
+    .footer a {
+      font-weight: 500;
+      color: #55595c
+    }
+    
+    .footer a:hover {
+      color: #0275d8
+    }
+    
+    .footer p {
+      margin-bottom: 0
+    }
+    
+    .icon-info:after {
+      content: "*";
+      color: gray;
+      margin-left: 2px
+    }
+    
+    .section-header td {
+      min-width: 300px;
+      background: #eee
+    }
+    
+    .thead th:not(:first-child) {
+      background-color: #F6F6F6
+    }
+    
+    .thead td:first-child {
+      background-color: white
+    }
+    /** MOBILE **/
+    
+    @media only screen and (max-width:998px) {
+      .table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block
+      }
+      .table {
+        border-right: 1px solid #EEE
+      }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px
+      }
+      th {
+        display: none
+      }
+      td {
+        position: relative;
+        background-position: 3px 3px;
+        background-repeat: no-repeat;
+        background: white
+      }
+      td:first-of-type:not {
+        padding-left: 52%!important
+      }
+      td:first-of-type {
+        min-width: 100%
+      }
+      td:before {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 45%!important;
+        padding-right: 10px;
+        white-space: nowrap;
+        color: #444;
+        text-indent: 7px
+      }
+      td:nth-of-type(1):before {
+        content: ""
+      }
+      td:nth-of-type(2):before {
+        content: "Yahoo! Mail Webmail";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(3):before {
+        content: "Gmail Webmail";
+        border-left: 0px solid #C3161C
+      }
+      td:nth-of-type(4):before {
+        content: "Outlook.com";
+        border-left: 0px solid #0194C2
+      }
+      td:nth-of-type(5):before {
+        content: "Android 4.x Gmail App";
+        border-left: 0px solid #F38F39
+      }
+      td:nth-of-type(6):before {
+        content: "Android 5.x Mail App";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(7):before {
+        content: "Apple Mail";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(8):before {
+        content: "Outlook 2007/10/13";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(9):before {
+        content: "iOS 10 Mail App";
+        border-left: 0px solid #3E434D
+      }
+      td:not(:first-child) {
+        padding-left: 52%!important;
+        text-indent: 9px
+      }
+      tr,
+      tr:hover {
+        background: white!important
+      }
+      td:first-child {
+        background: #EEE;
+        text-indent: 6px
+      }
+      .section-header {
+        width: 100%;
+        max-width: 712px
+      }
+      .section-header td {
+        width: 100%;
+        padding-left: 0!important;
+        max-width: 712px;
+        background: #ccc!important;
+        text-indent: 9px
+      }
+    }
+    
+    @media(min-width:544px) {
+      .header {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        text-align: left
+      }
+    }
+    /** DESKTOP **/
+    
+    @media(min-width:998px) {
+      .header h1 {
+        font-size: 4rem
+      }
+      .header p {
+        font-size: 1.5rem
+      }
+      .table {
+        border-top: 0!important;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+      }
+      td,
+      th {
+        position: relative
+      }
+      tr:nth-of-type(0),
+      th {
+        border-top: 0!important
+      }
+      td:hover::after {
+        content: "";
+        position: absolute;
+        background: #ffa;
+        left: 0;
+        top: -5000px;
+        height: 10000px;
+        width: 100%;
+        z-index: -1
+      }
+    }
+    
+    @media(min-width:576px) {
+      .bd-footer {
+        text-align: left
+      }
+    }
+    
+    .footer-links {
+      padding-left: 0;
+      margin-bottom: 1rem
+    }
+    
+    .footer-links li {
+      display: inline-block
+    }
+    
+    .footer-links li+li {
+      margin-left: 1rem
+    }
+  </style>
+  <meta name="google-site-verification" content="RJClrmVeFCM_8mrOkj8-n1o4_9SpqorT5hWy-OfAyXQ">
+  <meta name="norton-safeweb-site-verification" content="uuumul2pv244l59thd1n8-amp4fpaur78c2vyf9wuxuzvqvxpnq278wer-wl67fn3r9qnvjnlxq3j2hpx-r86cyreacb533ynn474e8qna2ox7-rueu3-lbyld68z7e7">
+</head>
+
+<body>
+  <a href="https://github.com/coliff/caniuse.email">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+  <div class="header">
+    <div class="container">
+      <h1>Can I Use in HTML Emails</h1>
+      <p class="lead">
+        Compatibility tables for CSS support in HTML emails.
+      </p>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 col-md-12">
+        <table id="table" class="table table-rounded table-xstriped table-hover table-sm">
+
+        </table>
+      </div>
+
+      <!--
+      <div class="col-lg-1 visible-lg hidden-md hidden-sm" role="complementary" hidden>
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+          <ul class="nav bs-docs-sidenav">
+            <li><a href=#box>Box</a></li>
+            <li><a href=#flexbox>Flexbox</a></li>
+            <li><a href=#text>Text</a></li>
+            <li><a href=#lists>Text</a></li>
+          </ul>
+        </nav>
+      </div>
+      -->
+
+
+    </div>
+  </div>
+  <footer class="footer text-muted" role="contentinfo">
+    <div class="container">
+      <p>Designed and built by <a href="https://twitter.com/christianoliff" target="_blank">@christianoliff</a>. v0.11.29 (Beta)
+      </p>
+      <p>
+        <a class="github-button" href="https://github.com/coliff/caniuse.email" data-icon="octicon-star" data-style="mega" data-count-href="/coliff/caniuse.email/stargazers"
+          data-count-api="/repos/coliff/caniuse.email#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star coliff/caniuse.email on GitHub">Star</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    window.jQuery || document.write(
+      '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"><\/script>')
+  </script>
+  <!-- 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+  -->
+  <script src="js/jquery.floaThead.min.js"></script>
+  <script>
+    $(function () {
+      $.getJSON('js/data.json', function (dataJson) {
+        window.colspan = 1;
+        window.dataJson = dataJson;
+        //console.log(dataJson);
+        var html = '<thead>\n\t<tr class="thead">\n\t\t<th class=""></th>\n';
+        var agents = dataJson.agents;
+        for (browser in agents) {
+          for (var v = 0; v < agents[browser].versions.length; v++) {
+            colspan++;
+            html += '\t\t<th class="">' + agents[browser].name + '<br/>';
+            html += '<small>' + agents[browser].versions[v] + '</small></th>\n';
+          }
+        }
+        html += '\t</tr>\n</thead>\n<tbody>\n\t<tr>\n';
+
+        var sections = dataJson.data;
+        for (section in sections) {
+          var data = sections[section];
+          html += '\t<tr class="section-header"><td class="section-header" colspan="'+window.colspan+'">' + section + '</td></tr>\n';
+          for (prop in data) {
+            html += '\t\t<td>' + prop + '\n';
+            for (var l = 0; l < data[prop].links.length; l++) {
+              var linkObj = data[prop].links[l];
+              for (link in linkObj) {
+                html += '\t\t\t<a href="' + linkObj[link] + '">' + link + '</a>\n'
+              }
+            }
+            html += '\t\t</td>\n';
+            console.log(data.stats);
+            var cssStats = data[prop].stats;
+            for (browser in cssStats) {
+              var browserObj = agents[browser];
+              for (version in cssStats[browser]) {
+                html += '\t\t<td><div class="' + cssStats[browser][version] + '">';
+                html += dataJson.supportvalues[cssStats[browser][version]].icon;
+                html += '</div></td>\n'
+              }
+            }
+            html += '\t</tr>\n';
+          }
+        }
+
+        html += '</tbody>\n';
+        window.html = html
+        console.log(html);
+        $(html).appendTo("#table");
+      });
+    })
+  </script>
+  <script src="https://github.com/MohamedBassem/spam-referrals-blocker/releases/download/v0.2/spam-referrals-blocker.min.js"></script>
+  <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-88031592-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'index.htm',
+      'assets': ['js/jquery.floaThead.min.js']
+    });
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>
+    $(document).ready(function () {
+      if ($(window).width() >= 998) {
+        var $table = $('table.table');
+        $table.floatThead();
+      };
+    });
+  </script>
+</body>
+
+</html>
