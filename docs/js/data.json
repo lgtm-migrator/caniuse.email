@@ -79,31 +79,31 @@
   "supportvalues": {
     "y": {
       "description": "(Y)es, supported by default",
-      "icon": "<i class=\"fa fa-check\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-check\" title=\"Supported\" aria-hidden=\"true\"></i>"
     },
     "a": {
       "description": "(A)lmost supported (aka Partial support)",
-      "icon": "<i class=\"fa fa-info\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-info\" aria-hidden=\"true\"></i>"
     },
     "n": {
       "description": "(N)o support, or disabled by default",
-      "icon": "<i class=\"fa fa-ban\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-ban\" title=\"Not Supported\" aria-hidden=\"true\"></i>"
     },
     "p": {
       "description": "No support, but has (P)olyfill",
-      "icon": "<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
     },
     "u": {
       "description": "Support (u)nknown",
-      "icon": "<i class=\"fa fa-question\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-question\" title=\"Support unknown\" aria-hidden=\"true\"></i>"
     },
     "x": {
       "description": "Requires prefi(x) to work",
-      "icon": "<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
     },
     "d": {
       "description": "(D)isabled by default (need to enable flag or something)",
-      "icon": "<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
+      "icon": "<i class=\"fa fa-fw fa-exclamation-triangle\" aria-hidden=\"true\"></i>"
     },
     "#n": {
       "description": "Where n is a number, starting with 1, corresponds to the notes_by_num note. For example: \"42\":\"y #1\" means version 42 is supported by default and see note 1.",
@@ -198,7 +198,7 @@
         "links": [
           {
             "MDN": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-position",
-            "W3C": "http://www.w3.org/TR/CSS2/colors.html#propdef-background-position"
+            "W3C": "https://www.w3.org/TR/CSS2/colors.html#propdef-background-position"
           }
         ],
         "categories": [
@@ -238,7 +238,7 @@
         "links": [
           {
             "MDN": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat",
-            "W3C": "http://www.w3.org/TR/CSS2/colors.html#propdef-background-repeat"
+            "W3C": "https://www.w3.org/TR/CSS2/colors.html#propdef-background-repeat"
           }
         ],
         "categories": [
