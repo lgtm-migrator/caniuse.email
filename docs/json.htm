@@ -205,35 +205,63 @@
         content: ""
       }
       td:nth-of-type(2):before {
-        content: "Yahoo! Mail Webmail";
+        content: "Apple Mail (iOS 10.3)";
         border-left: 0px solid #3E434D
       }
       td:nth-of-type(3):before {
-        content: "Gmail Webmail";
+        content: "Apple Mail (MacOS 10.12)";
         border-left: 0px solid #C3161C
       }
       td:nth-of-type(4):before {
-        content: "Outlook.com";
+        content: "Gmail (Android 5.x)";
         border-left: 0px solid #0194C2
       }
       td:nth-of-type(5):before {
-        content: "Android 4.x Gmail App";
+        content: "Gmail (iOS 10 App)";
         border-left: 0px solid #F38F39
       }
       td:nth-of-type(6):before {
-        content: "Android 5.x Mail App";
+        content: "Gmail (Webmail)";
         border-left: 0px solid #3E434D
       }
       td:nth-of-type(7):before {
-        content: "Apple Mail";
+        content: "Outlook 2007";
         border-left: 0px solid #3E434D
       }
       td:nth-of-type(8):before {
-        content: "Outlook 2007/10/13";
+        content: "Outlook 2013";
         border-left: 0px solid #3E434D
       }
       td:nth-of-type(9):before {
-        content: "iOS 10 Mail App";
+        content: "Outlook 2016";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(10):before {
+        content: "Outlook (Webmail)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(11):before {
+        content: "Yahoo! (iOS 10 App)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(12):before {
+        content: "Yahoo! (Android 5.x)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(13):before {
+        content: "Yahoo! Mail (Webmail)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(14):before {
+        content: "Windows Mail (Windows 8)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(14):before {
+        content: "Windows Mail (Windows 10)";
+        border-left: 0px solid #3E434D
+      }
+      td:nth-of-type(14):before {
+        content: "Windows Mail (Windows Live Mail)";
         border-left: 0px solid #3E434D
       }
       td:not(:first-child) {
@@ -396,7 +424,7 @@
         for (browser in agents) {
           for (var v = 0; v < agents[browser].versions.length; v++) {
             colspan++;
-            html += '\t\t<th class="">' + agents[browser].name + '<br/>';
+            html += '\t\t<th class="">' + agents[browser].name + '<br>';
             html += '<small>' + agents[browser].versions[v] + '</small></th>\n';
           }
         }
@@ -411,7 +439,7 @@
             for (var l = 0; l < data[prop].links.length; l++) {
               var linkObj = data[prop].links[l];
               for (link in linkObj) {
-                html += '\t\t\t<a href="' + linkObj[link] + '">' + link + '</a>\n'
+                html += '\t\t\t<br><small><a href="' + linkObj[link] + '">' + link + '</a></small>\n'
               }
             }
             html += '\t\t</td>\n';
