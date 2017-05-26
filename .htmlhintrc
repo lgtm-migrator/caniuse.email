@@ -11,5 +11,6 @@
     "title-require": true,
     "attr-value-not-empty": true,
     "alt-require": true,
-    "doctype-html5": true
+    "doctype-html5": true,
+    "id-class-ad-disabled": true
 }
