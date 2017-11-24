@@ -44,6 +44,33 @@
 .thead th:not(:first-child){background-color:#F6F6F6}
 .thead td:first-child{background-color:white}
 
+    .table-fixed{
+  width: 100%;
+  background-color: #f3f3f3;
+  tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+    }
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+       background-color: #f39c12;
+       border-color:#e67e22;
+      }
+    }
+  }
+}
+    
 /** MOBILE **/
 @media only screen and (max-width:998px){
 .table,thead,tbody,th,td,tr{display:block}
@@ -110,7 +137,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
-      <table class="table table-rounded table-xstriped table-hover table-sm">
+      <table class="table table-rounded table-xstriped table-hover table-sm table-fixed">
         <thead>
           <tr class="thead">
             <th class=""></th>
@@ -919,12 +946,12 @@ ga('create','UA-88031592-1','auto');ga('send','pageview');
 UpUp.start({'content-url':'index.htm','assets':['js/jquery.floaThead.min.js']});
 </script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script>
+<!-- <script>
 $(document).ready(function(){
 if($(window).width()>=998){
 var $table=$('table.table');
 $table.floatThead();
 };});
-</script>
+</script> -->
 </body>
 </html>
