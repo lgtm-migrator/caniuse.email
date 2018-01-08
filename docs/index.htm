@@ -73,13 +73,13 @@
 /** MOBILE **/
 @media only screen and (max-width:998px){
 .table,thead,tbody,th,td,tr{display:block}
-.table{border-right:1px solid #EEE}
+.table{border-right:1px solid #EEE;width:320px}
 thead tr{position:absolute;top:-9999px;left:-9999px}
 th{display:none}
-td{position:relative;background-position:3px 3px;background-repeat:no-repeat;background:white}
-td:first-of-type:not{padding-left:52%!important}
+td{position:relative;background-position:3px 3px;background-repeat:no-repeat;background:#fff}
+td:first-of-type:not{padding-left:82%!important}
 td:first-of-type{min-width:100%}
-td:before{position:absolute;top:4px;left:4px;width:45%!important;padding-right:10px;white-space:nowrap;color:#444;text-indent:7px}
+td:before{position:absolute;top:4px;left:4px;width:95%!important;padding-right:10px;white-space:nowrap;color:#444;text-indent:7px}
 td:nth-of-type(1):before{content:""}
 td:nth-of-type(2):before{content:"Yahoo! Mail Webmail";border-left:0px solid #3E434D}
 td:nth-of-type(3):before{content:"Gmail Webmail";border-left:0px solid #C3161C}
@@ -89,8 +89,8 @@ td:nth-of-type(6):before{content:"Android 5.x Mail App";border-left:0px solid #3
 td:nth-of-type(7):before{content:"Apple Mail";border-left:0px solid #3E434D}
 td:nth-of-type(8):before{content:"Outlook 2007/10/13";border-left:0px solid #3E434D}
 td:nth-of-type(9):before{content:"iOS 11 Mail App";border-left:0px solid #3E434D}
-td:not(:first-child){padding-left:52%!important;text-indent:9px}
-tr,tr:hover{background:white!important}
+td:not(:first-child){padding-left:82%!important;text-indent:9px}
+tr,tr:hover{background:#fff!important}
 td:first-child{background:#EEE;text-indent:6px}
 .section-header{width:100%;max-width:712px}
 .section-header td{width:100%;padding-left:0!important;max-width:712px;background:#ccc!important;text-indent:9px}
@@ -144,7 +144,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <th class="">Outlook.com<br><small>Webmail</small></th>
             <th class="">Android 4.x<br><small>(Gmail App)</small></th>
             <th class="">Android 5.x<br><small>(Mail App)</small></th>
-            <th class="">Apple Mail<br><small>(OS X 10.10)</small></th>
+            <th class="">Apple Mail<br><small>(OS X 10.13)</small></th>
             <th class="">Outlook <br><small>2007/10/13</small></th>
             <th class="">iOS 11<br><small>(Mail App)</small></th>
             <th class="">Yahoo! Mail<br><small>Webmail</small></th>
@@ -214,7 +214,9 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
         </tr>
-        <tr class="section-header">
+
+
+        <tr class="section-header" id="css-box-border-properties">
             <td colspan="10" class="section-header"><h5>CSS Box and Border Properties</h5></td>
         </tr>
          <tr>
@@ -305,14 +307,16 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
         </tr>
-        <a name="css-media-queries"></a>
-        <tr class="section-header">
+
+
+
+        <tr class="section-header" id="css-media-queries">
             <td colspan="10" class="section-header"><h5>CSS Media Queries</h5></td>
         </tr>
         <tr>
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@media</a></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes icon-info">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -323,7 +327,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
          <tr>
             <td>(max-device-width) </td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes icon-info">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -334,7 +338,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
         <tr>
             <td>(min-pixel-width) </td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes icon-info">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -345,7 +349,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <tr>
             <td>(max-width) </td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes icon-info">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -881,16 +885,16 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
 
         <tr>
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;head&gt;</a></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
+            <td><div class="compatible compatible-no">&times;</div></td>
         </tr>
-        <tr>
+        <tr class="border-light">
             <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;body&gt;</a></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -940,7 +944,7 @@ ga('create','UA-88031592-1','auto');ga('send','pageview');
 <script src="upup.min.js"></script>
 <script>
 UpUp.start({
-  'cache-version': 'v1.6',
+  'cache-version': 'v1.8',
   'content-url':'index.htm',
   'assets':['js/floaThead.min.js']
 });
