@@ -941,12 +941,13 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>-->
 <script src="js/floaThead.min.js"></script>
 <script src="https://github.com/MohamedBassem/spam-referrals-blocker/releases/download/v0.2/spam-referrals-blocker.min.js"></script>
-<script src="upup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/1.0.0/upup.min.js"></script>
 <script>
 UpUp.start({
   'cache-version': 'v1.8',
   'content-url':'index.htm',
-  'assets':['js/floaThead.min.js']
+  'assets':['js/floaThead.min.js'],
+  'service-worker-url': '/upup.sw.min.js'
 });
 </script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
