@@ -26,7 +26,7 @@
   th:first-of-type{min-width:178px!important}
   td:first-of-type{min-width:178px;max-width:208px}
   .container{margin-left:auto;margin-right:auto;}
-  table{overflow:hidden;border-bottom:1px solid #eee;}
+  table{overflow:hidden}
   td{border-left:1px solid #EEE}
   td:last-of-type {border-right:1px solid #EEE}
   .compatible{text-align:center;margin-left:auto;margin-right:auto}
@@ -75,7 +75,7 @@
 /** MOBILE **/
 @media only screen and (max-width:998px){
 .table,thead,tbody,th,td,tr{display:block}
-.table{border-right:1px solid #EEE;width:320px}
+.table{width:320px}
 thead tr{position:absolute;top:-9999px;left:-9999px}
 th{display:none}
 td{position:relative;background-position:3px 3px;background-repeat:no-repeat;background:#fff}
@@ -83,10 +83,10 @@ td:first-of-type:not{padding-left:82%!important}
 td:first-of-type{min-width:100%}
 td:before{position:absolute;top:4px;left:4px;width:95%!important;padding-right:10px;white-space:nowrap;color:#444;text-indent:7px}
 td:nth-of-type(1):before{content:""}
-td:nth-of-type(2):before{content:"Yahoo! Mail Webmail";border-left:0px solid #3E434D}
-td:nth-of-type(3):before{content:"Gmail Webmail";border-left:0px solid #C3161C}
-td:nth-of-type(4):before{content:"Outlook.com";border-left:0px solid #0194C2}
-td:nth-of-type(5):before{content:"Android 4.x Gmail App";border-left:0px solid #F38F39}
+td:nth-of-type(2):before{content:"Yahoo! Mail Webmail";border-left:0}
+td:nth-of-type(3):before{content:"Gmail Webmail";border-left:0}
+td:nth-of-type(4):before{content:"Outlook.com";border-left:0}
+td:nth-of-type(5):before{content:"Android 4.x Gmail App";border-left:0}
 td:nth-of-type(6):before{content:"Android 5.x Mail App";border-left:0px solid #3E434D}
 td:nth-of-type(7):before{content:"Apple Mail";border-left:0px solid #3E434D}
 td:nth-of-type(8):before{content:"Outlook 2007/10/13";border-left:0px solid #3E434D}
@@ -106,7 +106,7 @@ td:first-child{background:#EEE;text-indent:6px}
 @media(min-width:998px){
 .header h1{font-size:4rem}
 .header p{font-size:1.5rem}
-.table{border-top:0!important;border-right:1px solid #eee;border-bottom:1px solid #eee;}
+.table{border-top:0}
 td,th{position:relative}
 tr:nth-of-type(0),th{border-top:0!important}
 td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px;height:10000px;width:100%;z-index:-1}
@@ -145,7 +145,7 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
-      <table class="table table-rounded table-xstriped table-hover table-sm table-fixed">
+      <table class="table table-rounded table-xstriped table-hover table-sm table-fixed border-right border-bottom">
         <thead>
           <tr class="thead">
             <th class=""></th>
