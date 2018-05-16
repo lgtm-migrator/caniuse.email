@@ -1,9 +1,10 @@
 {
   "name": "caniuse.email",
   "start_url": "/",
+  "lang": "en",
   "icons": [
     {
-      "src": "/img/favicon.png",
+      "src": "/favicon.png",
       "sizes": "128x128",
       "type": "image/png"
     }

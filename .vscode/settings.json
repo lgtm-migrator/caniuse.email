@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "aysnc",
+    "caniuse"
+  ],
+  "editor.formatOnSave": true,
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "stylelint.configOverrides": {
+    "ignoreFiles": "style.min.css"
+  },
+  "minify.minifyExistingOnSave": true
+}

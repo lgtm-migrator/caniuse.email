@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Can I Use for HTML Emails? Compatibility Tables">
+  <meta name="description" content="Can I Use for HTML Emails? Compatibility Tables for CSS and HTML support">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>📧 Can I Use for HTML Emails</title>
+  <title>Can I Use for HTML Emails</title>
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <!--[if IE]>
       <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
@@ -17,128 +19,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css">
     <![endif]-->
   <link rel="icon" href="favicon.png">
-  <style>
-  body{margin-left:auto;margin-right:auto;min-width:320px}
-  th,td{min-width:108px;max-width:108px;border-top:none;border:1px!important grey;}
-  th{line-height:14px;font-weight:normal;border-top:none;text-indent:2px}
-  th:hover,.thead th{background:white}
-  tr:hover{background:#9DD9EC}
-  th:first-of-type{min-width:178px!important}
-  td:first-of-type{min-width:178px;max-width:208px}
-  .container{margin-left:auto;margin-right:auto}
-  table{overflow:hidden}
-  td{border-left:1px solid #EEE}
-  td:last-of-type {border-right:1px solid #EEE}
-  .compatible{text-align:center;margin-left:auto;margin-right:auto}
-  .compatible-no{color:#ddd;font-size:21px}
-  .compatible-yes{color:#3BCC0E;font-size:17px}
-  small{opacity:.5}
-  .header{padding:2rem 15px;margin-bottom:1.5rem;color:#cdbfe3;text-align:center;background-color:#22699A;background-image:linear-gradient(45deg,#0a1855 0,#38B4D9 100%)}
-  .header .container{position:relative}
-  .header h1{font-size:3rem;font-weight:normal;color:#fff}
-  .header p{margin-bottom:0;font-size:1.25rem;font-weight:300}
-  .footer{padding:4rem 0;margin-top:4rem;font-size:85%;background:#f7f7f7}
-.footer a{font-weight:500;color:#55595c}
-.footer a:hover{color:#0275d8}
-.footer p{margin-bottom:0}
-.icon-info:after{content:"*";color:gray;margin-left:2px}
-.section-header td{min-width:300px;background:#eee}
-.thead th:not(:first-child){background-color:#F6F6F6}
-.thead td:first-child{background-color:white}
-
-    .table-fixed{
-  width: 100%;
-  tbody{
-    height:200px;
-    overflow-y:auto;
-    width: 100%;
-    }
-  thead,tbody,tr,td,th{
-    display:block;
-  }
-  tbody{
-    td{
-      float:left;
-    }
-  }
-  thead {
-    tr{
-      th{
-        float:left;
-       background-color: #f39c12;
-       border-color:#e67e22;
-      }
-    }
-  }
-}
-
-/** MOBILE **/
-@media only screen and (max-width:998px){
-.table,thead,tbody,th,td,tr{display:block}
-.table{width:320px}
-thead tr{position:absolute;top:-9999px;left:-9999px}
-th{display:none}
-td{position:relative;background-position:3px 3px;background-repeat:no-repeat;background:#fff}
-td:first-of-type:not{padding-left:82%!important}
-td:first-of-type{min-width:100%}
-td:before{position:absolute;top:4px;left:4px;width:95%!important;padding-right:10px;white-space:nowrap;color:#444;text-indent:7px}
-td:nth-of-type(1):before{content:""}
-td:nth-of-type(2):before{content:"Yahoo! Mail Webmail";border-left:0}
-td:nth-of-type(3):before{content:"Gmail Webmail";border-left:0}
-td:nth-of-type(4):before{content:"Outlook.com";border-left:0}
-td:nth-of-type(5):before{content:"Android 4.x Gmail App";border-left:0}
-td:nth-of-type(6):before{content:"Android 5.x Mail App";border-left:0px solid #3E434D}
-td:nth-of-type(7):before{content:"Apple Mail";border-left:0px solid #3E434D}
-td:nth-of-type(8):before{content:"Outlook 2007/10/13";border-left:0px solid #3E434D}
-td:nth-of-type(9):before{content:"iOS 11 Mail App";border-left:0px solid #3E434D}
-td:not(:first-child){padding-left:82%!important;text-indent:9px}
-tr,tr:hover{background:#fff!important}
-td:first-child{background:#EEE;text-indent:6px}
-.section-header{width:100%;max-width:712px}
-.section-header td{width:100%;padding-left:0!important;max-width:712px;background:#ccc!important;text-indent:9px}
-}
-
-@media(min-width:544px){
-.header{padding-top:4rem;padding-bottom:4rem;margin-bottom:3rem;text-align:left}
-}
-
-/** DESKTOP **/
-@media(min-width:998px){
-.header h1{font-size:4rem}
-.header p{font-size:1.5rem}
-.table{border-top:0}
-td,th{position:relative}
-tr:nth-of-type(0),th{border-top:0!important}
-td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px;height:10000px;width:100%;z-index:-1}
-}
-
-@media(min-width:576px){
-.bd-footer{text-align:left}
-}
-.footer-links{padding-left:0;margin-bottom:1rem}
-.footer-links li{display:inline-block}
-.footer-links li+li{margin-left:1rem}
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88031592-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-88031592-1');
-</script>
-<meta name="google-site-verification" content="RJClrmVeFCM_8mrOkj8-n1o4_9SpqorT5hWy-OfAyXQ">
-<meta name="msvalidate.01" content="FE5F7C37D3394A82C074EB2713834A35" />
-<meta name="norton-safeweb-site-verification" content="uuumul2pv244l59thd1n8-amp4fpaur78c2vyf9wuxuzvqvxpnq278wer-wl67fn3r9qnvjnlxq3j2hpx-r86cyreacb533ynn474e8qna2ox7-rueu3-lbyld68z7e7">
+  <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-88031592-1" importance="low"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-88031592-1');
+  </script>
+  <meta name="google-site-verification" content="RJClrmVeFCM_8mrOkj8-n1o4_9SpqorT5hWy-OfAyXQ">
+  <meta name="msvalidate.01" content="FE5F7C37D3394A82C074EB2713834A35" />
+  <meta name="norton-safeweb-site-verification" content="uuumul2pv244l59thd1n8-amp4fpaur78c2vyf9wuxuzvqvxpnq278wer-wl67fn3r9qnvjnlxq3j2hpx-r86cyreacb533ynn474e8qna2ox7-rueu3-lbyld68z7e7">
 </head>
+
 <body>
-<a href="https://github.com/coliff/caniuse.email">
-    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  <a href="https://github.com/coliff/caniuse.email">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
+  </a>
 
   <div class="header">
     <div class="container">
       <h1>Can I Use in HTML Emails</h1>
       <p class="lead">
-      Compatibility tables for CSS support in HTML emails.
+        Compatibility tables for CSS support in HTML emails.
       </p>
 
     </div>
@@ -146,228 +49,558 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
-      <table class="table table-rounded table-xstriped table-hover table-sm table-fixed border-right border-bottom">
-        <thead>
-          <tr class="thead">
-            <th class=""></th>
-            <th class="">Gmail<br><small>Webmail</small></th>
-            <th class="">Outlook.com<br><small>Webmail</small></th>
-            <th class="">Android 4.x<br><small>(Gmail App)</small></th>
-            <th class="">Android 5.x<br><small>(Mail App)</small></th>
-            <th class="">Apple Mail<br><small>(OS X 10.13)</small></th>
-            <th class="">Outlook <br><small>2007/10/13</small></th>
-            <th class="">iOS 11<br><small>(Mail App)</small></th>
-            <th class="">Yahoo! Mail<br><small>Webmail</small></th>
-          </tr>
-        </thead>
-   <!--   </table>
+        <table class="table table-rounded table-xstriped table-hover table-sm table-fixed border-right border-bottom">
+          <thead>
+            <tr class="thead">
+              <th class=""></th>
+              <th class="">Gmail
+                <br>
+                <small>Webmail</small>
+              </th>
+              <th class="">Outlook.com
+                <br>
+                <small>Webmail</small>
+              </th>
+              <th class="">Android 4.x
+                <br>
+                <small>(Gmail App)</small>
+              </th>
+              <th class="">Android 5.x
+                <br>
+                <small>(Mail App)</small>
+              </th>
+              <th class="">Apple Mail
+                <br>
+                <small>(OS X 10.13)</small>
+              </th>
+              <th class="">Outlook
+                <br>
+                <small>2007/10/13</small>
+              </th>
+              <th class="">iOS 11
+                <br>
+                <small>(Mail App)</small>
+              </th>
+              <th class="">Yahoo! Mail
+                <br>
+                <small>Webmail</small>
+              </th>
+            </tr>
+          </thead>
+          <!--   </table>
          </div>
     </div>
        <table class="table table-rounded table-stripe table-hover table-sm">-->
-    <tbody>
+          <tbody>
 
-       <tr class="section-header">
-            <td colspan="10"><h5>CSS Background Properties</h5></td>
-        </tr>
-    <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">background-image</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-          <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">background-position</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-          <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat">background-repeat</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size">background-size</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-
-
-        <tr class="section-header" id="css-box-border-properties">
-            <td colspan="10" class="section-header"><h5>CSS Box and Border Properties</h5></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">border</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image">border-image</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">border-radius</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-shadow">border-shadow</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">height</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">width</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width">max-width</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width">min-width</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-
-
-
-        <tr class="section-header" id="css-media-queries">
-            <td colspan="10" class="section-header"><h5>CSS Media Queries</h5></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@media</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;*</div></td>
-        </tr>
-         <tr>
-            <td>(max-device-width) </td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td>(min-pixel-width) </td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
+            <tr class="section-header">
+              <td colspan="10">
+                <h5>CSS Background Properties</h5>
+              </td>
+            </tr>
             <tr>
-            <td>(max-width) </td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <!--
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">background-image</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">background-position</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat">background-repeat</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size">background-size</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+
+
+            <tr class="section-header" id="css-box-border-properties">
+              <td colspan="10" class="section-header">
+                <h5>CSS Box and Border Properties</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">border</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image">border-image</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">border-radius</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-shadow">border-shadow</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">height</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">width</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width">max-width</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width">min-width</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+
+
+
+            <tr class="section-header" id="css-media-queries">
+              <td colspan="10" class="section-header">
+                <h5>CSS Media Queries</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@media</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;*</div>
+              </td>
+            </tr>
+            <tr>
+              <td>(max-device-width) </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>(min-pixel-width) </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>(max-width) </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <!--
         <tr>
             <td>(orientation) </td>
             <td><div class="compatible compatible-yes">&#10004;</div></td>
@@ -381,385 +614,985 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
         </tr>
         -->
 
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>CSS Positioning and Visibility</h5></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">margin</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">padding</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position: absolute</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position: fixed</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">z-index</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility">visibility: hidden</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">display: none</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">overflow: none</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <!--
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>CSS Positioning and Visibility</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">margin</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">padding</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position: absolute</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position: fixed</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">z-index</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility">visibility: hidden</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">display: none</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">overflow: none</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <!--
         <tr>
             <td colspan="10" class="section-header"><h5>CSS Flexbox Properties <small>Coming Soon</small></h5></td>
         </tr>
         -->
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>CSS Text Properties</h5></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">@font-face</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/direction">direction</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">font</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">font-family</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">font-style</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">font-variant</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font-size</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">font-weight</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing">letter-spacing</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">line-height</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">text-align</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">text-decoration</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent">text-indent</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow">text-overflow</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">text-shadow</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">text-transform</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space">white-space</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing">word-spacing</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-wrap">word-wrap</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align">vertical-align</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-fill-color">text-fill-color</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-fill-stroke">text-fill-stroke</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>CSS Text Properties</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">@font-face</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/direction">direction</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">font</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">font-family</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style">font-style</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">font-variant</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font-size</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">font-weight</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing">letter-spacing</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">line-height</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">text-align</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">text-decoration</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent">text-indent</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow">text-overflow</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">text-shadow</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">text-transform</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space">white-space</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing">word-spacing</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-wrap">word-wrap</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align">vertical-align</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-fill-color">text-fill-color</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-fill-stroke">text-fill-stroke</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
 
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>CSS Table Properties</h5></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse">border-collapse</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing">border-spacing</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells">empty-cells</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <!--
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>CSS Table Properties</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse">border-collapse</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing">border-spacing</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells">empty-cells</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <!--
         <tr>
             <td colspan="10" class="section-header"><h5>CSS Lists and Counters Properties <small>Coming Soon</small></h5></td>
         </tr>
@@ -767,94 +1600,222 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <td colspan="10" class="section-header"><h5>CSS Animation Properties <small>Coming Soon</small></h5></td>
         </tr>
         -->
-        <!--
+            <!--
         <tr>
             <th colspan="10"><h5>CSS Selectors <small>Coming Soon</small></h5></th>
         </tr>
         -->
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>HTML</h5></td>
-        </tr>
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>HTML</h5>
+              </td>
+            </tr>
 
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-          <tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
 
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">&lt;iframe&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-        </tr>
-         <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">&lt;img srcset&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-          <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">&lt;template&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-        <!--
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">&lt;iframe&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">&lt;img srcset&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">&lt;template&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+            <!--
         <tr>
             <td colspan="10"><h5>Lists</h5></td>
         </tr>
@@ -862,64 +1823,140 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
             <td colspan="10"><h5>Tables</h5></td>
         </tr>
         -->
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>Link Element</h5></td>
-        </tr>
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>Link Element</h5>
+              </td>
+            </tr>
 
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt; in &lt;head&gt;</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-        </tr>
-          <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt; in &lt;body&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-        </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt; in &lt;head&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt; in &lt;body&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+            </tr>
 
-        <tr class="section-header">
-            <td colspan="10" class="section-header"><h5>Style Element</h5></td>
-        </tr>
+            <tr class="section-header">
+              <td colspan="10" class="section-header">
+                <h5>Style Element</h5>
+              </td>
+            </tr>
 
-        <tr>
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;head&gt;</a></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-        </tr>
-        <tr class="border-light">
-            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;body&gt;</a></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-no">&times;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-            <td><div class="compatible compatible-yes">&#10004;</div></td>
-        </tr>
-    </tbody>
-</table>
-</div>
+            <tr>
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;head&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+            </tr>
+            <tr class="border-light">
+              <td>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;body&gt;</a>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-no">&times;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<!--<div class="col-lg-1 visible-lg hidden-md hidden-sm" role="complementary" hidden>
+      <!--<div class="col-lg-1 visible-lg hidden-md hidden-sm" role="complementary" hidden>
     <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
     <ul class="nav bs-docs-sidenav">
     <li><a href=#box>Box</a></li>
@@ -928,55 +1965,60 @@ td:hover::after{content:"";position:absolute;background:#ffa;left: 0;top:-5000px
     <li><a href=#lists>Text</a></li>
 </ul></nav> </div>-->
 
-</div>
-</div>
-    <footer class="footer text-muted">
-  <div class="container">
-    <p>Designed and built by <a href="https://twitter.com/christianoliff" target="_blank">@christianoliff</a>. v0.4.11 (Beta) </p>
-    <p>
-<a class="github-button" href="https://github.com/coliff/caniuse.email" data-icon="octicon-star" data-size="large" data-count-href="/coliff/caniuse.email/stargazers" data-show-count="true" aria-label="Star coliff/caniuse.email on GitHub">Star</a>
-      </p>
+    </div>
   </div>
-</footer>
+  <footer class="footer text-muted">
+    <div class="container">
+      <p>Designed and built by
+        <a href="https://christianoliff.com" target="_blank">@christianoliff</a>. v0.5.15 (Beta)
+	  </p>
+      <p>
+        <a class="github-button" href="https://github.com/coliff/caniuse.email" data-icon="octicon-star" data-size="large" data-count-href="/coliff/caniuse.email/stargazers"
+          data-show-count="true" aria-label="Star coliff/caniuse.email on GitHub">Star</a>
+      </p>
+    </div>
+  </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><\/script>')</script>
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css></script>-->
-<script src="js/floaThead.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/1.0.0/upup.min.js"></script>
-<script>
-UpUp.start({
-  'cache-version': 'v1.25',
-  'content-url':'index.htm',
-  'assets':['js/floaThead.min.js'],
-  'service-worker-url': '/upup.sw.min.js'
-});
-</script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
- <script>
-$(document).ready(function(){
-if($(window).width()>=998){
-var $table=$('table.table');
-$table.floatThead();
-};});
-</script>
-<script>
-var trackOutboundLink = function(url) {
-  gtag('event', 'click', {
-    'event_category': 'outbound',
-    'event_label': url,
-    'transport_type': 'beacon'
-  });
-}
-function onclickCallback(e) {
-  var e = window.e || e;
-  if ( (e.target.tagName !== 'A') || (e.target.host == window.location.host) ) return;
-  trackOutboundLink(e.target); // GA event tracker
-}
-if (document.addEventListener)
-  document.addEventListener('click', onclickCallback, false);
-else
-  document.attachEvent('onclick', onclickCallback);
-</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><\/script>')</script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js></script>-->
+  <script src="js/floaThead.min.js" aysnc defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/1.0.0/upup.min.js" aysnc defer></script>
+  <script>
+    UpUp.start({
+      'cache-version': 'v1.26',
+      'content-url': 'index.htm',
+      'assets': ['js/floaThead.min.js', 'css/style.min.css'],
+      'service-worker-url': '/upup.sw.min.js'
+    });
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>
+    $(document).ready(function () {
+      if ($(window).width() >= 998) {
+        var $table = $('table.table');
+        $table.floatThead();
+      };
+    });
+  </script>
+  <script>
+    var trackOutboundLink = function (url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon'
+      });
+    }
+    function onclickCallback(e) {
+      var e = window.e || e;
+      if ((e.target.tagName !== 'A') || (e.target.host == window.location.host)) return;
+      trackOutboundLink(e.target); // GA event tracker
+    }
+    if (document.addEventListener)
+      document.addEventListener('click', onclickCallback, false);
+    else
+      document.attachEvent('onclick', onclickCallback);
+  </script>
 </body>
+
 </html>
