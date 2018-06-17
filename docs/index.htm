@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Can I Use for HTML Emails? Compatibility Tables for CSS and HTML support">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>Can I Use for HTML Emails</title>
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css">
     <![endif]-->
   <link rel="icon" href="favicon.png">
-
+  <meta name="description" content="Can I Use for HTML Emails? Compatibility Tables for CSS and HTML support">
+  <link rel="manifest" href="site.webmanifest">
   <meta name="google-site-verification" content="RJClrmVeFCM_8mrOkj8-n1o4_9SpqorT5hWy-OfAyXQ">
   <meta name="msvalidate.01" content="FE5F7C37D3394A82C074EB2713834A35" />
   <meta name="norton-safeweb-site-verification" content="uuumul2pv244l59thd1n8-amp4fpaur78c2vyf9wuxuzvqvxpnq278wer-wl67fn3r9qnvjnlxq3j2hpx-r86cyreacb533ynn474e8qna2ox7-rueu3-lbyld68z7e7">
 </head>
 
-<body>
+<body class="bg-light">
   <a href="https://github.com/coliff/caniuse.email">
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
       alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
@@ -43,10 +44,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-11 col-md-12">
-        <table class="table table-rounded table-xstriped table-hover table-sm table-fixed border-right border-bottom">
+        <table class="table table-rounded table-hover table-sm table-fixed border-right border-bottom bg-white">
           <thead>
-            <tr class="thead">
-              <th class=""></th>
+            <tr class="thead text-center">
+              <th class="bg-light"></th>
               <th class="">Gmail
                 <br>
                 <small>Webmail</small>
@@ -85,7 +86,7 @@
          </div>
     </div>
        <table class="table table-rounded table-stripe table-hover table-sm">-->
-          <tbody>
+          <tbody class="table-bordered">
 
             <tr class="section-header">
               <td colspan="10">
@@ -1828,10 +1829,10 @@
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">&lt;link&gt; in &lt;head&gt;</a>
               </td>
               <td>
-                <div class="compatible compatible-yes">&#10004;</div>
+                <div class="compatible compatible-no">&times;</div>
               </td>
               <td>
-                <div class="compatible compatible-yes">&#10004;</div>
+                <div class="compatible compatible-no">&times;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
@@ -1860,7 +1861,7 @@
                 <div class="compatible compatible-no">&times;</div>
               </td>
               <td>
-                <div class="compatible compatible-yes">&#10004;</div>
+                <div class="compatible compatible-no">&times;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
@@ -1893,28 +1894,28 @@
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;head&gt;</a>
               </td>
               <td>
-                <div class="compatible compatible-no">&times;</div>
-              </td>
-              <td>
-                <div class="compatible compatible-no">&times;</div>
+                <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
-                <div class="compatible compatible-no">&times;</div>
+                <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
-                <div class="compatible compatible-no">&times;</div>
+                <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
               </td>
               <td>
-                <div class="compatible compatible-no">&times;</div>
+                <div class="compatible compatible-yes">&#10004;</div>
+              </td>
+              <td>
+                <div class="compatible compatible-yes">&#10004;</div>
               </td>
             </tr>
             <tr class="border-light">
@@ -1922,7 +1923,7 @@
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">&lt;style&gt; in &lt;body&gt;</a>
               </td>
               <td>
-                <div class="compatible compatible-yes">&#10004;</div>
+                <div class="compatible compatible-no">&times;</div>
               </td>
               <td>
                 <div class="compatible compatible-yes">&#10004;</div>
@@ -1952,7 +1953,7 @@
 
       <!--<div class="col-lg-1 visible-lg hidden-md hidden-sm" role="complementary" hidden>
     <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
-    <ul class="nav bs-docs-sidenav">
+    <ul class="nav bs-docs">
     <li><a href=#box>Box</a></li>
     <li><a href=#flexbox>Flexbox</a></li>
     <li><a href=#text>Text</a></li>
