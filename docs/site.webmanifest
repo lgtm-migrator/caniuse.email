@@ -1,6 +1,6 @@
 {
   "name": "caniuse.email",
-  "start_url": "/",
+  "start_url": "/?utm_source=a2hs",
   "lang": "en",
   "icons": [
     {
@@ -9,5 +9,6 @@
       "type": "image/png"
     }
   ],
+  "background_color": "#fff",
   "theme_color": "#C4161C"
 }

@@ -9,7 +9,7 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <!--[if IE]>
       <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
@@ -1965,7 +1965,7 @@
   <footer class="footer text-muted">
     <div class="container">
       <p>Designed and built by
-        <a href="https://christianoliff.com" target="_blank">@christianoliff</a>. v0.5.15 (Beta)
+        <a href="https://christianoliff.com" target="_blank">@christianoliff</a>. v0.8.08 (Beta)
       </p>
       <p>
         <a class="github-button" href="https://github.com/coliff/caniuse.email" data-icon="octicon-star" data-size="large" data-count-href="/coliff/caniuse.email/stargazers"
@@ -1976,18 +1976,8 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><\/script>')</script>
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js></script>-->
-  <script src="js/floaThead.min.js" aysnc></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/1.0.0/upup.min.js"></script>
-  <script>
-    UpUp.start({
-      'cache-version': 'v1.26',
-      'content-url': 'index.htm',
-      'assets': ['js/floaThead.min.js', 'css/style.min.css'],
-      'service-worker-url': '/upup.sw.min.js'
-    });
-  </script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js></script>-->
+  <script src="js/floaThead.min.js"></script>
   <script>
     $(document).ready(function () {
       if ($(window).width() >= 998) {
@@ -1996,31 +1986,23 @@
       };
     });
   </script>
-  <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-88031592-1" importance="low"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/UpUp/1.0.0/upup.min.js"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-88031592-1');
+    UpUp.start({
+      'cache-version': 'v1.27',
+      'content-url': 'index.html',
+      'assets': ['js/floaThead.min.js', 'css/style.min.css'],
+      'service-worker-url': '/upup.sw.min.js'
+    });
   </script>
-  <script>
-    var trackOutboundLink = function (url) {
-      gtag('event', 'click', {
-        'event_category': 'outbound',
-        'event_label': url,
-        'transport_type': 'beacon'
-      });
-    }
-    function onclickCallback(e) {
-      var e = window.e || e;
-      if ((e.target.tagName !== 'A') || (e.target.host == window.location.host)) return;
-      trackOutboundLink(e.target); // GA event tracker
-    }
-    if (document.addEventListener)
-      document.addEventListener('click', onclickCallback, false);
-    else
-      document.attachEvent('onclick', onclickCallback);
+  <script async src="https://buttons.github.io/buttons.js"></script>
+  <script>window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-88031592-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
   </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="js/analytics.min.js"></script>
 </body>
 
 </html>
