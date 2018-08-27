@@ -65,7 +65,7 @@ small {
   color: #cdbfe3;
   text-align: center;
   background-color: #22699a;
-  background-image: linear-gradient(45deg, #0a1855 0, #38b4d9 100%);
+  background-image: linear-gradient(45deg, #0a1855 0, #bb00bb 100%);
 }
 .header .container {
   position: relative;
@@ -110,6 +110,34 @@ small {
 }
 .thead td:first-child {
   background-color: white;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
 
 /** MOBILE **/
