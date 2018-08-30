@@ -3,6 +3,12 @@ body {
   margin-right: auto;
   min-width: 320px;
 }
+a {
+  color: #777;
+}
+a:hover {
+  color: #444;
+}
 th,
 td {
   min-width: 107px;
@@ -48,14 +54,19 @@ td:last-of-type {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  min-width: 19px;
+  min-height: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16 16;
 }
 .compatible-no {
-  color: #ddd;
-  font-size: 21px;
+  color: #eee;
+  background-image: url(../img/times.svg);
 }
 .compatible-yes {
   color: #3bcc0e;
-  font-size: 17px;
+  background-image: url(../img/check-circle.svg);
 }
 small {
   opacity: 0.5;
