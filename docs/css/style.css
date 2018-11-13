@@ -58,7 +58,7 @@ td:last-of-type {
   min-height: 19px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16 16;
+  background-size: 16px 16px;
 }
 .compatible-no {
   color: #eee;
