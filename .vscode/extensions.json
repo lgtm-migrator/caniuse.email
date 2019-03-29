@@ -3,7 +3,7 @@
     "EditorConfig.EditorConfig",
     "mkaufman.HTMLHint",
     "esbenp.prettier-vscode",
-    "HookyQR.minify",
+    "shinnn.stylelint",
     "streetsidesoftware.code-spell-checker"
   ]
 }

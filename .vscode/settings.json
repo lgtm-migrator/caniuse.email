@@ -53,12 +53,5 @@
     "z"
   ],
   "cSpell.ignorePaths": ["*.min.js"],
-  "editor.formatOnSave": true,
-  "[css]": {
-    "editor.formatOnSave": true
-  },
-  "stylelint.configOverrides": {
-    "ignoreFiles": "style.min.css"
-  },
-  "minify.minifyExistingOnSave": true
+  "editor.formatOnSave": true
 }
