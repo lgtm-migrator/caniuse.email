@@ -4,43 +4,31 @@
   platform: Webmail
   type: webmail
   marketshare: "27%"
-  css-background-color: compatible-yes
-  css-background-image: compatible-yes
-  css-background-position: compatible-yes
 
 - name: Outlook.com
   type: Webmail
   wikipedia: "https://en.wikipedia.org/"
-  description: "ios an macOS mail apps (ipad,iphone,desktop apps)"
+  description: ""
   platform: Webmail
   marketshare: "2%"
-  css-background-color: compatible-yes
-  css-background-image: compatible-no
-  css-background-position: compatible-yes
 
 - name: Android 6.x
   type: Gmail App
   wikipedia: "https://en.wikipedia.org/"
   description: ""
   marketshare: "2%"
-  css-background-color: compatible-yes
-  css-background-image: compatible-yes
-  css-background-position: compatible-yes
 
 - name: Android 5.x
   type: Mail App
   wikipedia: "https://en.wikipedia.org/"
   description: ""
-  marketshare: "49%"
-  css-background-color: compatible-yes
-  css-background-image: compatible-no
-  css-background-position: compatible-yes
+  marketshare: "2%"
 
 - name: Apple Mail
   type: macOS 10.13
   wikipedia: "https://en.wikipedia.org/"
   description: "macOS mail app"
-  marketshare: ""
+  marketshare: "8%"
 
 - name: Oulook
   type: 2007/10/13
