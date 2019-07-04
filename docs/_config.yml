@@ -13,6 +13,7 @@ sass:
 
 # Plugins
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
