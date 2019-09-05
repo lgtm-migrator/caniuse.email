@@ -762,7 +762,7 @@
         - client: "8"
           compatible: "no"
         - client: "9"
-          compatible: "no"
+          compatible: "yes"
     - title: "&lt;picture&gt;"
       href: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
       clients:
