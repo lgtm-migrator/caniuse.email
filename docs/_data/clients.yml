@@ -12,7 +12,7 @@
   platform: Webmail
   marketshare: "2%"
 
-- name: Android 6.x
+- name: Android 7.x
   type: Gmail App
   wikipedia: "https://en.wikipedia.org/"
   description: ""
@@ -25,7 +25,7 @@
   marketshare: "2%"
 
 - name: Apple Mail
-  type: macOS 10.13
+  type: macOS 10.14
   wikipedia: "https://en.wikipedia.org/"
   description: "macOS mail app"
   marketshare: "8%"
@@ -36,7 +36,7 @@
   description: ""
   marketshare: "9%"
 
-- name: iOS 12
+- name: iOS 13
   type: Mail App
   wikipedia: "https://en.wikipedia.org/"
   description: "iOS mail app (iPad,iPhone)"
