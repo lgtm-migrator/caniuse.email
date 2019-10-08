@@ -38,7 +38,7 @@
 
 - name: iOS 13
   type: Mail App
-  wikipedia: "https://en.wikipedia.org/"
+  wikipedia: "https://en.wikipedia.org/wiki/IOS_13"
   description: "iOS mail app (iPad,iPhone)"
   marketshare: "37%"
 
@@ -53,5 +53,5 @@
   wikipedia: "https://en.wikipedia.org/wiki/Mozilla_Thunderbird"
   description: ""
   platform: desktop
-  type: "60.1.0"
+  type: "67"
   marketshare: "1%"
