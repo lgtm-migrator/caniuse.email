@@ -1,0 +1,31 @@
+@media print {
+  header svg {
+    display: none !important;
+  }
+  thead {
+    display: table-header-group;
+  }
+
+  tbody td {
+    border: 1px solid #ccc !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .section-header a,
+  table td a img,
+  footer .float-right {
+    display: none !important;
+    opacity: 0;
+  }
+}
