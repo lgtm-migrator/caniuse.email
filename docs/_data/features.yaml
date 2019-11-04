@@ -181,7 +181,7 @@
       href: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
       clients:
         - client: "1"
-          compatible: "yes"
+          compatible: "no"
         - client: "2"
           compatible: "yes"
         - client: "3"
