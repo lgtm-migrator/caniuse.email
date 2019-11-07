@@ -375,7 +375,7 @@
       href: "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
       clients:
         - client: "1"
-          compatible: "yes"
+          compatible: "no"
         - client: "2"
           compatible: "no"
         - client: "3"
