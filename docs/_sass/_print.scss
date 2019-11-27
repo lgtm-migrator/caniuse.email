@@ -22,6 +22,12 @@
     page-break-after: avoid;
   }
 
+  div.no,
+  div.yes,
+  div.partial {
+    -webkit-print-color-adjust: exact;
+  }
+
   .section-header a,
   table td a img,
   footer .float-right {
