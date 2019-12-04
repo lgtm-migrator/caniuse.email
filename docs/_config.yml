@@ -1,23 +1,19 @@
-# Site Settings
 locale                   : "en"
 title                    : caniuse.email
 description              : Compatibility tables for CSS support in HTML emails
 baseurl                  : /
 url                      : https://caniuse.email
 
-# Google Analytics
 google_analytics         : UA-88031592-1
 
 sass:
     style: compressed
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Reading Files
 include:
   - _pages
   - ./well-known
