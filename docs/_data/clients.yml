@@ -3,14 +3,14 @@
   description: gmail
   platform: Webmail
   type: webmail
-  marketshare: "27%"
+  marketshare: "38%"
 
 - name: Outlook.com
   type: Webmail
   wikipedia: "https://en.wikipedia.org/wiki/Outlook.com"
   description: ""
   platform: Webmail
-  marketshare: "2%"
+  marketshare: "1%"
 
 - name: Android 7.x
   type: Gmail App
@@ -20,18 +20,18 @@
 
 - name: Android 5.x
   type: Mail App
-  wikipedia: "https://en.wikipedia.org/"
+  wikipedia: "https://en.wikipedia.org/wiki/Android_(operating_system)"
   description: ""
   marketshare: "2%"
 
 - name: Apple Mail
   type: macOS 10.14
-  wikipedia: "https://en.wikipedia.org/"
+  wikipedia: "https://en.wikipedia.org/wiki/Apple_Mail"
   description: "macOS mail app"
   marketshare: "8%"
 
 - name: Outlook
-  type: 2007/10/13
+  type: 2013/16/19
   wikipedia: "https://en.wikipedia.org/wiki/Microsoft_Outlook"
   description: ""
   marketshare: "9%"
@@ -40,14 +40,14 @@
   type: Mail App
   wikipedia: "https://en.wikipedia.org/wiki/IOS_13"
   description: "iOS mail app (iPad,iPhone)"
-  marketshare: "37%"
+  marketshare: "28%"
 
 - name: Yahoo! Mail
   wikipedia: "https://en.wikipedia.org/wiki/Yahoo!_Mail"
   description: ""
   platform: webmail
   type: Webmail
-  marketshare: "7%"
+  marketshare: "4%"
 
 - name: Thunderbird
   wikipedia: "https://en.wikipedia.org/wiki/Mozilla_Thunderbird"
