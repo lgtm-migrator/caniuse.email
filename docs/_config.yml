@@ -1,4 +1,4 @@
-locale                   : "en"
+locale                   : "en_US"
 title                    : caniuse.email
 description              : Compatibility tables for CSS support in HTML emails
 baseurl                  : /
