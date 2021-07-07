@@ -1,0 +1,27 @@
+{
+  "name": "caniuse-email",
+  "version": "1.0.0",
+  "private": true,
+  "description": "static site built with Jekyll",
+  "homepage": "https://caniuse.email",
+  "bugs": {
+    "url": "https://github.com/caniuse-email/caniuse.email/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caniuse-email/caniuse.email.git"
+  },
+  "funding": {
+    "type": "PayPal",
+    "url": "https://paypal.me/coliff"
+  },
+  "license": "MIT",
+  "author": "C.Oliff (https://christianoliff.com)",
+  "scripts": {
+    "test": "stylelint \"docs/_sass/*.scss\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.13.1"
+  }
+}
