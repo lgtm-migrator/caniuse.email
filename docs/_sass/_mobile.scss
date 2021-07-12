@@ -8,6 +8,7 @@
   tr {
     display: block;
   }
+  /* stylelint-disable-next-line */
   .floatThead-container,
   .table {
     width: 320px !important;
@@ -79,7 +80,7 @@
     border-left: 0;
   }
   td:nth-of-type(8):before {
-    content: "iOS 13 Mail App";
+    content: "iOS 14 Mail App";
     border-left: 0;
   }
   td:nth-of-type(9):before {
